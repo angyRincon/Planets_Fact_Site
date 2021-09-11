@@ -1,21 +1,25 @@
+import planets from '../Planets.json'
+
 export const NavBar = () => {
     return (
-        <>
-            <nav className="navbar">
-                <a href="#" className="logo">The Planets</a>
-                <i className="menu-icon fas fa-bars"/>
+        <div className="navbar">
+
+            <a href="#" className="logo">The Planets</a>
+
+            <nav>
                 <ul>
-                    <li><a href="#">Mercury</a></li>
-                    <li><a href="#">Venus</a></li>
-                    <li><a href="#">Earth</a></li>
-                    <li><a href="#">Mars</a></li>
-                    <li><a href="#">Jupiter</a></li>
-                    <li><a href="#">Saturn</a></li>
-                    <li><a href="#">Uranus</a></li>
-                    <li><a href="#">Neptune</a></li>
+                    {planets.map((planet, index) => (
+                        <li key={index}>
+                            <a href="#">{planet.name}</a>
+                        </li>
+                    ))}
                 </ul>
             </nav>
 
-        </>
+            <a href="#" className="menu-icon">
+                <li className="fas fa-bars"/>
+            </a>
+
+        </div>
     )
 }
