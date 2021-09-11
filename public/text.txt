@@ -1,0 +1,110 @@
+---------- EARTH ----------
+
+- Earth is the third planet from the Sun and the only astronomical object known to harbor and support life.
+About 29.2% of Earth's surface is land consisting of continents and islands. The remaining 70.8% is covered 
+with water, mostly by oceans, seas, gulfs, and other salt-water bodies, but also by lakes, rivers, and other 
+freshwater, which together constitute the hydrosphere. Much of Earth's polar regions are covered in ice. 
+
+- Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or 
+physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is 
+underlain by a highly viscous solid mantle. The crust is separated from the mantle by the Mohorovičić
+ discontinuity.[100] The thickness of the crust varies from about 6 kilometres (3.7 mi) under the oceans
+ to 30–50 km (19–31 mi) for the continents. The crust and the cold, rigid, top of the upper mantle are 
+collectively known as the lithosphere, which is divided into independently moving tectonic plates
+
+- The total surface area of Earth is about 510 million km2 (197 million sq mi).[15] Of this, 70.8%,[15] or 361.
+13 million km2 (139.43 million sq mi), is below sea level and covered by ocean water.[120] Below the ocean's 
+surface are much of the continental shelf, mountains, volcanoes,[86] oceanic trenches, submarine canyons,
+oceanic plateaus, abyssal plains, and a globe-spanning mid-ocean ridge system. The remaining 29.2%, or 
+148.94 million km2 (57.51 million sq mi), not covered by water has terrain that varies greatly from place to 
+place and consists of mountains, deserts, plains, plateaus, and other landforms.
+
+ROTATION TIME: 0.99 DAYS
+REVOLUTION TIME: 365.26 DAYS
+RADIUS: 6,371 KM
+AVERAGE TEMP: 16°C
+
+---------- MERCURY ----------
+
+- Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun
+takes 87.97 Earth days, the shortest of all the Sun's planets. It is named after the Roman god Mercurius
+(Mercury), god of commerce, messenger of the gods, and mediator between gods and mortals, corresponding to
+the Greek god Hermes (Ἑρμῆς)
+At this time, it may appear as a bright star-like object but is often far more difficult to observe than Venus.
+From Earth, the planet telescopically displays the complete range of phases, similar to Venus and the Moon, 
+which recurs over its synodic period of approximately 116 days.
+
+- Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer,
+a deeper liquid core layer, and a solid inner core.[24][25] The planet's density is the second highest in 
+the Solar System at 5.427 g/cm3, only slightly less than Earth's density of 5.515 g/cm3.[3] If the effect of
+gravitational compression were to be factored out from both planets, the materials of which Mercury is made 
+would be denser than those of Earth, with an uncompressed density of 5.3 g/cm3 versus Earth's 4.4 g/cm3.
+
+- Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and
+heavy cratering, indicating that it has been geologically inactive for billions of years. It is more 
+heterogeneous than either Mars's or the Moon's, both of which contain significant stretches of similar 
+geology, such as maria and plateaus.[43] Albedo features are areas of markedly different reflectivity, 
+which include impact craters, the resulting ejecta, and ray systems. Larger albedo features correspond to 
+higher reflectivity plains.[44] Mercury has dorsa (also called "wrinkle-ridges"), Moon-like highlands, 
+montes (mountains), planitiae (plains), rupes (escarpments), and valles (valleys)
+
+ROTATION TIME: 59 DAYS
+REVOLUTION TIME: 87.97 DAYS
+RADIUS: 2.439,7 KM
+AVERAGE TEMP: 178°C
+
+---------- VENUS ----------
+
+- Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty.
+As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be,
+on rare occasions, visible to the naked eye in broad daylight.[17][18] Venus lies within Earth's orbit, 
+and so never appears to venture far from the Sun, either setting in the west just after dusk or rising in 
+the east a little while before dawn.
+
+- The interior of Venus is probably similar to Earth's interior. Venus, like Earth, is one of the
+terrestrial planets and is made of rock and metal. It probably has a partly molten metallic core, a rocky
+mantle, and a crust.
+The varied terrain of Venus, including volcanoes, mountains, craters, and lava flows, suggests that the 
+planet was once, and perhaps still is, geologically active. But basic questions about the interior of
+Venus remain, such as the thickness of the lithosphere.
+
+- Venus and Earth are near-twins in size, mass, composition, and (from their positions in the Solar System)
+conditions when they formed. Like Earth, Venus has a large iron core and rocky silicate mantle.
+Its crust is largely basalt (again, like Earth). Now we have looked in detail at the earth, we compare 
+the overall behavior of Venus. Much of our knowledge is based on the exquisitely detailed surface mapping
+ by radar spacecraft (see below, from Magellan program, NASA). These maps show that the surface of this 
+planet has not developed plates, and as a result the interior heat has dramatically different ways of 
+rising to the surface compared with the earth
+
+ROTATION TIME: 116 DAYS
+REVOLUTION TIME: 243 DAYS
+RADIUS: 6.051,8 KM
+AVERAGE TEMP: 452°C
+
+---------- MARS ----------
+
+- Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System,
+being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often
+referred to as the "Red Planet".[17][18] The latter refers to the effect of the iron oxide prevalent on
+Mars's surface, which gives it a reddish appearance distinctive among the astronomical bodies visible to
+the naked eye.[19] Mars is a terrestrial planet with a thin atmosphere, with surface features reminiscent
+of the impact craters of the Moon and the valleys, deserts and polar ice caps of Earth.
+
+- Like Earth, Mars has differentiated into a dense metallic core overlaid by less dense materials.[68] 
+Current models of its interior imply a core consisting primarily of iron and nickel with about 16–17%
+ sulfur.[69] This iron(II) sulfide core is thought to be twice as rich in lighter elements as Earth's.[70]
+ The core is surrounded by a silicate mantle that formed many of the tectonic and volcanic features on the planet, but it appears to be dormant. Besides silicon and oxygen, the most abundant elements in the Martian crust are iron, magnesium, aluminium, calcium, and potassium. The average thickness of the planet's crust is about 50 kilometres (31 mi), with a maximum thickness of 125 kilometres (78 mi).[70] Earth's crust averages 40 kilometres (25 mi).
+
+- Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, 
+and other elements that typically make up rock. The Martian surface is primarily composed of tholeiitic 
+basalt,[77] although parts are more silica-rich than typical basalt and may be similar to andesitic rocks
+on Earth, or silica glass. Regions of low albedo suggest concentrations of plagioclase feldspar, 
+with northern low albedo regions displaying higher than normal concentrations of sheet silicates and 
+high-silicon glass. Parts of the southern highlands include detectable amounts of high-calcium pyroxenes. 
+Localized concentrations of hematite and olivine have been found.[78] Much of the surface is deeply
+covered by finely grained iron(III) oxide dust.
+
+ROTATION TIME: 1 DAYS
+REVOLUTION TIME: 687 DAYS
+RADIUS: 3.389,5 KM
+AVERAGE TEMP: 27 °C
