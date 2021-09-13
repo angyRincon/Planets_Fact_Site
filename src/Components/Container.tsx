@@ -19,16 +19,17 @@ export const Container = () => {
                     </div>
 
                     <div className="buttons" id="buttons">
-                        <a href="#">Overview</a>
-                        <a href="#">Structure</a>
-                        <a href="#">Surface</a>
+                        <a href="#">01 <span>Overview</span></a>
+                        <a href="#">02 <span>Internal Structure</span></a>
+                        <a href="#">03 <span>Surface Geology</span></a>
                     </div>
                 </div>
             </div>
         </div>
     )
 }
-
+// ab76e5e2-492d-4287-b211-0475c868dc80
+// c2f89511-2259-4f5a-a03c-5d85d6b1d844
 
 /*
 <div className="buttons">
