@@ -22,6 +22,7 @@ body {
     align-items: center;
     width: 100%;
     border-bottom: 1px solid #242444;
+    margin-bottom: 50px;
 }
 
 nav {
@@ -80,6 +81,82 @@ nav ul li a.active {
     background-color: #702cd4;
     border-radius: 71% 30% 70% 30% / 41% 39% 61% 59%;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 500px) );
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container img {
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+
+.container .content {
+    width: 60%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+
+.container .content .description h1 {
+    color: #fff;
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin: 0;
+
+}
+
+.container .content .description p {
+    color: #fff;
+    font-size: 13px;
+}
+
+.container .content .description a {
+    color: #b4b4b4;
+}
+
+.container .content .description span {
+    margin-left: 5px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.container .content .description i {
+    margin-left: 5px;
+    color: #fff;
+}
+
+
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #242444;
+}
+
+.buttons a {
+    color: #b4b4b4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px;
+    transition: all 0.3s ease-out;
+    border-bottom: 5px solid transparent;
+}
+
+.buttons a:hover {
+    border-bottom: 5px solid #702cd4;
+}
+
 
 @media (min-width: 625px) and (max-width: 991px) {
     .navbar {
