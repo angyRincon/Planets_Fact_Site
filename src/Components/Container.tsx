@@ -34,8 +34,8 @@ export const Container = () => {
                     </div>
                 </div>
             </div>
+            <Details/>
 
-            {/*<Details/>*/}
         </>
     )
 }
