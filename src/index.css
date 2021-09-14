@@ -192,8 +192,9 @@ nav ul li a.active {
 .buttons a:focus,
 .buttons a.active {
     background-color: #702cd4;
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    border: 2px solid #702cd4;
 }
 
 .buttons span {
