@@ -17,12 +17,39 @@ body {
     background-size: cover;
 }
 
+.mover-img {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-12px);
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-12px);
+        transform: translateY(-12px);
+    }
+}
+
 .navbar {
     display: flex;
     align-items: center;
     width: 100%;
     border-bottom: 1px solid #242444;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 nav {
@@ -78,15 +105,10 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus,
-nav ul li a.active
-{
+nav ul li a.active {
     background-color: #702cd4;
     border-radius: 71% 30% 70% 30% / 41% 39% 61% 59%;
 }
-
-/*a:focus {*/
-/*    background-color: yellow !important;*/
-/*}*/
 
 .container {
     display: grid;
@@ -102,7 +124,7 @@ nav ul li a.active
 }
 
 .container .content {
-    width: 60%;
+    width: 70%;
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
 }
@@ -124,8 +146,8 @@ nav ul li a.active
 }
 
 .container .content .description p {
-    color: #fff;
-    font-size: 13px;
+    color: #b4b4b4;
+    font-size: 12px;
 }
 
 .container .content .description a {
@@ -143,6 +165,10 @@ nav ul li a.active
     color: #fff;
 }
 
+.buttons-mobile {
+    display: none;
+}
+
 .buttons {
     background-color: #080424;
 }
@@ -150,8 +176,8 @@ nav ul li a.active
 .buttons a {
     text-transform: uppercase;
     display: block;
-    border: 1px solid #242444;
-    padding: 13px;
+    border: 2px solid #242444;
+    padding: 10px;
     margin-bottom: 10px;
     color: #b4b4b4;
     font-weight: 600;
@@ -165,8 +191,8 @@ nav ul li a.active
 .buttons a:focus,
 .buttons a.active {
     background-color: #702cd4;
-    transform: translateY(-15px);
     -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .buttons span {
@@ -175,7 +201,42 @@ nav ul li a.active
     font-weight: 500;
 }
 
-@media (min-width: 625px) and (max-width: 991px) {
+.details-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 20px 250px;
+    color: #fff;
+}
+
+.details-container .detail-item {
+    border: 2px solid #242444;
+    padding: 15px 20px;
+}
+
+.details-container .detail-item h6 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #b4b4b4;
+}
+
+.details-container .detail-item h4 {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/***************** RESPONSIVE DESIGN ***********************/
+
+@media (max-width: 999px) {
     .navbar {
         flex-direction: column;
         margin-top: 30px;
@@ -191,15 +252,53 @@ nav ul li a.active
     }
 
     .navbar ul li a {
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 500;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .container img {
+        width: 35%;
+        height: auto;
+    }
+
+    .container .content {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+
+    .container .content .description {
+        width: 50%;
+    }
+
+    .container .content .description p {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .buttons {
+        width: 40%;
+    }
+
+    .buttons a {
+        font-size: 14px;
+        padding: 15px;
     }
 }
 
-
-@media (min-width: 200px) and (max-width: 625px) {
+@media (min-width: 200px) and (max-width: 670px) {
     .navbar {
         flex-direction: row;
+        margin-bottom: 0;
     }
 
     .navbar .menu-icon {
@@ -209,7 +308,7 @@ nav ul li a.active
     nav ul {
         background-color: #242444;
         position: absolute;
-        top: 60px;
+        top: 90px;
         right: 0;
         width: 100%;
         z-index: 2;
@@ -218,7 +317,7 @@ nav ul li a.active
     nav ul li {
         display: block;
         margin: auto;
-        padding: 10px;
+        padding-bottom: 10px;
         text-align: center;
         border-bottom: 1px solid #080424;
         -webkit-transition: all 0.3s ease;
@@ -247,16 +346,18 @@ nav ul li a.active
     }
 
     .buttons {
+        display: none;
+    }
+
+    .buttons-mobile {
         display: flex;
         justify-content: space-around;
         border-bottom: 1px solid #242444;
-        position: absolute;
-        top: 50px;
-        left: 0;
+        border-top: 1px solid #242444;
         width: 100%;
     }
 
-    .buttons a {
+    .buttons-mobile a {
         color: #b4b4b4;
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
@@ -267,7 +368,40 @@ nav ul li a.active
         border-bottom: 5px solid transparent;
     }
 
-    .buttons a:hover {
+    .buttons-mobile a:hover {
         border-bottom: 5px solid #702cd4;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1000px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .container img {
+        width: 30%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .container .content {
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+}
+
+@media (max-width: 492px) {
+    .container {
+        display: grid;
+        grid-template-columns: 600px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 }
