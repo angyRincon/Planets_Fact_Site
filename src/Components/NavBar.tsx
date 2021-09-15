@@ -1,5 +1,6 @@
 import planets from '../Planets.json'
 import {useEffect} from "react";
+import {Link} from 'react-router-dom'
 
 export const NavBar = () => {
 
@@ -14,7 +15,7 @@ export const NavBar = () => {
 
     useEffect(() => {
         let menuList = document.getElementById("menuList")
-        menuList.style.maxHeight = "0px"
+        menuList.style.maxHeight = "400px"
     }, [])
 
     return (
@@ -24,13 +25,14 @@ export const NavBar = () => {
 
             <nav>
                 <ul id="menuList">
-                    {planets.map(planet => (
-                        <li key={planet.name}>
-                            <a href="#">
+                    {planets.map((planet, index) => {
+                        return <li key={index}>
+                            <Link className={planets[index].name === "earth" ? "active" : ""}
+                                  to={`/planet/${planets[index].name}`}>
                                 {planet.name}
-                            </a>
+                            </Link>
                         </li>
-                    ))}
+                    })}
                 </ul>
             </nav>
 

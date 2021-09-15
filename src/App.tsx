@@ -6,8 +6,13 @@ import {NavBar} from "./Components/NavBar";
 function App() {
     return (
         <>
-            <NavBar />
-            <Container />
+            <Router>
+                <NavBar/>
+                <Switch>
+                    <Route path="/planet/:planet" component={Container}/>
+                    <Route path="/" component={Container} exact/>
+                </Switch>
+            </Router>
         </>
     );
 }

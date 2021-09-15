@@ -172,6 +172,7 @@ nav ul li a.active {
 
 .buttons {
     background-color: #080424;
+    cursor: pointer;
 }
 
 .buttons a {
@@ -242,9 +243,9 @@ nav ul li a.active {
     font-weight: 400;
 }
 
-/***************** RESPONSIVE DESIGN ***********************/
+/***************** RESPONSIVE DESIGN  ***********************/
 
-@media (max-width: 999px) {
+@media (max-width: 985px) {
     .navbar {
         flex-direction: column;
         margin-top: 30px;
