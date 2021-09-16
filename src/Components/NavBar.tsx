@@ -1,22 +1,11 @@
 import planets from '../Planets.json'
-import {useEffect} from "react";
-import {Link} from 'react-router-dom'
+import {useState} from "react";
+import {NavLink} from 'react-router-dom'
 
 export const NavBar = () => {
+    const [toggle, setToggle] = useState<boolean>(false)
 
-    const handleShowNav = () => {
-        let menuList = document.getElementById("menuList")
-        if (menuList.style.maxHeight === "0px") {
-            menuList.style.maxHeight = "400px"
-        } else {
-            menuList.style.maxHeight = "0px"
-        }
-    }
-
-    useEffect(() => {
-        let menuList = document.getElementById("menuList")
-        menuList.style.maxHeight = "400px"
-    }, [])
+    const handleShowNav = () => setToggle(!toggle)
 
     return (
         <div className="navbar">
@@ -24,13 +13,12 @@ export const NavBar = () => {
             <a href="#" className="logo">The planets</a>
 
             <nav>
-                <ul id="menuList">
+                <ul className={!!toggle ? "navHide" : "navShow"}>
                     {planets.map((planet, index) => {
                         return <li key={index}>
-                            <Link className={planets[index].name === "earth" ? "active" : ""}
-                                  to={`/planet/${planets[index].name}`}>
+                            <NavLink activeClassName="active" to={`/planet/${planets[index].name}`}>
                                 {planet.name}
-                            </Link>
+                            </NavLink>
                         </li>
                     })}
                 </ul>

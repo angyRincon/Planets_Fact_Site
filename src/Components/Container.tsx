@@ -9,24 +9,38 @@ interface IPropsParams {
 
 
 export const Container = () => {
+
     const {planet}: IPropsParams = useParams()
 
     const [data, setData] = useState<any>(planets[2])
+    const [selected, setIsSelected] = useState<number>(1)
 
     const handleChangeOptions = (value: number) => {
         const planetFound = planets.find(p => p.name === planet)
         setData(planetFound)
+        setIsSelected(value)
+
         switch (value) {
             case 1:
                 return setData(planetFound)
             case 2:
-                return setData({...planetFound, image: planetFound.imageInside})
+                return setData({
+                    ...planetFound,
+                    image: planetFound.imageInside,
+                    description: planetFound.descriptionInside
+                })
+            case 3:
+                return setData({
+                    ...planetFound,
+                    description: planetFound.descriptionSurface
+                })
         }
     }
 
     useEffect(() => {
         const planetFound = planets.find(p => p.name === planet)
         setData(planetFound)
+        setIsSelected(1)
     }, [planet])
 
     return (
@@ -50,9 +64,12 @@ export const Container = () => {
                         </div>
 
                         <div className="buttons" id="buttons">
-                            <a onClick={() => handleChangeOptions(1)}>01 <span>Overview</span></a>
-                            <a onClick={() => handleChangeOptions(2)}>02 <span>Internal Structure</span></a>
-                            <a onClick={() => handleChangeOptions(3)}>03 <span>Surface Geology</span></a>
+                            <a href="#" id="1" className={selected === 1 ? 'active' : ""}
+                               onClick={() => handleChangeOptions(1)}>01 <span>Overview</span></a>
+                            <a href="#" id="2" className={selected === 2 ? 'active' : ""}
+                               onClick={() => handleChangeOptions(2)}>02 <span>Internal Structure</span></a>
+                            <a href="#" className={selected === 3 ? 'active' : ""}
+                               onClick={() => handleChangeOptions(3)}>03 <span>Surface Geology</span></a>
                         </div>
                     </div>
                 </div>

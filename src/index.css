@@ -86,14 +86,9 @@ nav ul li {
     transition: all 0.6s ease;
 }
 
-nav ul li:hover {
-    transform: translateY(-4px);
-    -webkit-transform: translateY(-4px);
-}
-
 nav ul li a {
     color: #fff;
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -149,6 +144,8 @@ nav ul li a.active {
 .container .content .description p {
     color: #b4b4b4;
     font-size: 12px;
+    max-height: 70px;
+    margin-bottom: 35px;
 }
 
 .container .content .description a {
@@ -245,7 +242,13 @@ nav ul li a.active {
 
 /***************** RESPONSIVE DESIGN  ***********************/
 
-@media (max-width: 985px) {
+@media (max-width: 1018px) and (min-width: 625px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 998px) {
     .navbar {
         flex-direction: column;
         margin-top: 30px;
@@ -292,6 +295,7 @@ nav ul li a.active {
     .container .content .description p {
         font-size: 15px;
         font-weight: 400;
+        margin-bottom: 60px;
     }
 
     .container .content .description a {
@@ -344,12 +348,22 @@ nav ul li a.active {
         transition: all 0.3s ease;
     }
 
-    nav ul li:hover {
-        background-color: #080424;
-    }
-
     nav ul li:last-child {
         border-bottom: 0;
+    }
+
+    ul.navShow,
+    ul.navShow li{
+        opacity: 1;
+        transition: all 0.5s ease-in;
+        max-height: 400px;
+    }
+
+    ul.navHide,
+    ul.navHide li{
+        max-height: 0;
+        opacity: 0;
+        transition: all 0.5s ease-in;
     }
 
     .navbar .logo,
@@ -428,6 +442,10 @@ nav ul li a.active {
         justify-content: center;
         align-items: center;
         align-content: center;
+    }
+
+    .container .content .description p {
+        margin-bottom: 100px;
     }
 
 }
